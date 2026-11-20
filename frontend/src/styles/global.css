@@ -42,3 +42,29 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .modal-field span{font-size:13px;color:var(--muted)}
 .modal-field input{padding:7px 10px;border:1px solid var(--border);border-radius:6px;font-size:13px}
 .modal-foot{display:flex;justify-content:flex-end;gap:8px;border-top:1px solid var(--border);padding:12px 18px}
+.panel{margin-top:20px;border-top:1px solid var(--border);padding-top:14px}
+.panel-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:8px}
+.panel-head h3{margin:0;font-size:16px}
+.panel-actions{display:flex;gap:8px;flex-wrap:wrap}
+.notice{border-radius:6px;padding:8px 10px;font-size:13px;margin-bottom:10px;background:#eef6ff;color:#1f6feb;border:1px solid #c7ddfb}
+.notice.warn{background:#fff8e6;border-color:#f3d38a;color:#8a5a00}
+.notice.error{background:#fef3f2;border-color:#f3c0bb;color:#b42318}
+.tabs{display:flex;gap:6px;margin-bottom:10px}
+.tab{border:1px solid var(--border);background:#fff;border-radius:6px;padding:6px 12px;cursor:pointer;font-size:13px}
+.tab.active{background:var(--brand);border-color:var(--brand);color:#fff}
+.tag{display:inline-block;border-radius:4px;padding:1px 6px;font-size:12px;background:#eef2f7;color:#334155}
+.tag.warn{background:#fff4d6;color:#8a5a00}
+.tag.danger{background:#fde8e6;color:#b42318}
+.tag-line{display:inline-block;margin-right:8px;font-size:12px}
+.sub-title{margin:16px 0 6px;font-size:14px}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px}
+.inline-input{width:100px;padding:4px 6px;border:1px solid var(--border);border-radius:4px;font-size:12px;margin-right:6px}
+.modal-card.wide{width:640px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.modal-field textarea{padding:7px 10px;border:1px solid var(--border);border-radius:6px;font-size:12px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.detail-block{display:flex;flex-direction:column;gap:6px}
+.policy-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.policy-card{display:flex;flex-direction:column;gap:2px;border:1px solid var(--border);background:#fff;border-radius:8px;padding:8px 12px;cursor:pointer;font-size:13px;max-width:320px}
+.policy-card.active{border-color:var(--brand);box-shadow:0 0 0 1px var(--brand) inset}
+.policy-card input{margin:0}
+.policy-card small{color:var(--muted);font-size:12px}

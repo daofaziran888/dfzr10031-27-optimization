@@ -28,6 +28,38 @@ class EntryPayload(BaseModel):
     remark: str | None = None
 
 
+class ExchangeVolume(BaseModel):
+    """维度交换包的一个分卷：CSV 内容或已解析的行数组，二选一。"""
+
+    file: str | None = None
+    content: str | None = None
+    rows: list[dict[str, Any]] | None = None
+
+
+class ExchangePackagePayload(BaseModel):
+    """提交一个维度字典交换包。"""
+
+    version: str
+    source: str
+    field: str = "地区"
+    effective_from: str
+    effective_to: str | None = None
+    volumes: list[ExchangeVolume] = Field(default_factory=list)
+
+
+class AliasPayload(BaseModel):
+    """按需为某个地区代码追加别名。"""
+
+    code: str
+    alias: str
+
+
+class ReconcilePayload(BaseModel):
+    """数据集市重算时选择的确认口径。"""
+
+    policy: str = "hold_overlap"
+
+
 
 class MetricDefEntry(BaseModel):
     """指标明细结构。"""
